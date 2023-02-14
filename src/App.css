@@ -1,3 +1,13 @@
+:root {
+  --primary: #8C22D6;
+  --pdark: #431066;
+  --pdarker: #3C0E5B;
+  --pdarkerest: #2F0C48;
+  --plight: #b277dd;
+  --secondary: #69E41B;
+  --sdark: #53B515;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +45,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#megatainer{
+  background-color: var(--pdarkerest);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: var(--secondary);
+  overflow: hidden;
+}
+
+.mainWindow {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 50%;
+}
+
+.windowHeaderBar{
+  background-color: var(--pdarker);
+  color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  /*flex-start*/
+  align-items: center;
+  height: 2rem;
+}
+
+.titleBox {
+  margin-left: .5rem;
+}
+
+.content {
+  background-color: var(--pdark);
+  color: var(--secondary);
+  width: 100%;
+  box-sizing: border-box;
+  padding: .75rem;
+}
+
+
+#editor{
+  height: 100%;
+  resize: none;
 }
